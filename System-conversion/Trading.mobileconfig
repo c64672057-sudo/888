@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>ConsentText</key>
+    <dict>
+        <key>default</key>
+        <string>Trading</string>
+    </dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>FullScreen</key>
+            <true/>
+            <key>IgnoreManifestScope</key>
+            <false/>
+            <key>Icon</key>
+            <data>
+                iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAC4jAAAuIwF4pT92AAAF8WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDg4LCAyMDIwLzA3LzEwLTIyOjA2OjUzICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDI2LTA3LTIxVDE2OjM0OjQzKzA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyNi0wOC0wN1QxNzowNTo1OSswODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyNi0wOC0wN1QxNzowNTo1OSswODowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpkOWQzYjk0OC1jZmRhLTg5NDktYmQwYS0wOWIyODIyZTM0MWUiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoxMTNiNjI5Mi01NDNmLWE1NGEtOGVlMS1iMWU2ZTU1ZTNmZjMiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5ZGY3MjM1Zi00MTg1LTBlNGQtYTM1Ni00MjA2NWJjMjMxMjQiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjlkZjcyMzVmLTQxODUtMGU0ZC1hMzU2LTQyMDY1YmMyMzEyNCIgc3RFdnQ6d2hlbj0iMjAyNi0wNy0yMVQxNjozNDo0MyswODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjAgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpkOWQzYjk0OC1jZmRhLTg5NDktYmQwYS0wOWIyODIyZTM0MWUiIHN0RXZ0OndoZW49IjIwMjYtMDgtMDdUMTc6MDU6NTkrMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi4wIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6Swd4SAAAKSUlEQVR4nO3dfayWdR3H8fcRUIaQmkuZBJbKkrUWWQxxYy0xnDOPMsOQDAGBtFOTMowet1q2ykWYmkamsGriA2XTOaduPVqtP7Jaq1YuA7WtJKc103g6/fHTOpxzuO6H6+H7/V3fz+tPdp/r+uxwf85139f1exgYHh5GJKrDrAOIWFIBJDQVQEJTASQ0FUBCUwEkNBVAQlMBJDQVQEJTASQ0FUBCUwEkNBVAQlMBJDQVQEJTASQ0FUBCUwEkNBVAQlMBJDQVQEJTASQ0FUBCUwEk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
+            </data>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Label</key>
+            <string>Trading</string>
+            <key>PayloadDescription</key>
+            <string>配置 Web Clip 設定</string>
+            <key>PayloadDisplayName</key>
+            <string>Web Clip</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>C0A38135-DC1C-4D38-9B60-0E6406D1EFS8</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Precomposed</key>
+            <false/>
+            <key>URL</key>
+            <string>https://pipwiserate.com/</string>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>Trading</string>
+    <key>PayloadIdentifier</key>
+    <string>hutingshuodeMacBook-Air.39b895e4-cb19-4bac-ae92-b64843e96f60</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>39b895e4-cb19-4bac-ae92-b64843e96f60</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
