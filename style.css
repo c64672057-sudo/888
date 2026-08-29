@@ -182,20 +182,27 @@ nm:root {
     .third-invest {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;        /* 關鍵：當空間不足時自動換行 */
+      gap: 10px;              /* 關鍵：設定區塊之間的平均間格（水平與垂直） */
+      justify-content: flex-start; /* 靠左對齊（或改用 space-between 平均分配剩餘空間） */
       text-align: center;
     }
 
     .third .trading {
-      width: 10%;
-      flex: 1;/*5個區塊平均分配寬度*/
-      min-width: 0;/*確保最小寬度*/
+       /* 根據需求設定區塊寬度，例如固定寬度，或使用百分比 */
+      /*flex: 0 1 calc(33.33% - 11px);  範例：扣除間格後，一行剛好排 3 個 */
+      /*width: 10%;*/
+      flex: 1;   /*5個區塊平均分配寬度*/
+      min-width: 0;   /*確保最小寬度*/
       padding: 5px;
       text-align: center;
       line-height: 1.5;
+      box-sizing: border-box;
+      border-radius: 8px;
     }
 
     .trading img {
-      width: 200px;
+      width: 100px;
       border-radius: 30px;
       padding-top: 10px;
       margin-bottom: 10px;
@@ -398,34 +405,20 @@ nm:root {
       margin-bottom: 50px;
     }
 
-@media (min-width: 1400px) {
-    .header-text h1{
-      font-size: clamp(32px, 7vw, 50px);
-    }
-    .header-text p {
-      font-size: 30px;
-    }
-    .itemr h5 {
-      margin: 0 0 10px;
-      font-size: 20px;
-      font-weight: 600;
-      color: #FFF;
-    }   
-
-    .trading img {
-      width: 180px;
-      border-radius: 30px;
-      padding-top: 10px;
-      margin-bottom: 10px;
-    }
-}
-
 @media (min-width:1201px) and (max-width: 1399px) {
     .header-text h1{
       font-size: clamp(32px, 7vw, 40px);
     }
     .header-text p {
       font-size: 20px;
+    }
+    .third-invest {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;        /* 關鍵：當空間不足時自動換行 */
+      gap: 16px;              /* 關鍵：設定區塊之間的平均間格（水平與垂直） */
+      justify-content: flex-start; /* 靠左對齊（或改用 space-between 平均分配剩餘空間） */
+      text-align: center;
     }
     .third .trading {
       padding: 0;
@@ -444,6 +437,14 @@ nm:root {
     }
     .header-text p {
       font-size: 20px;
+    }
+    .third-invest {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;        /* 關鍵：當空間不足時自動換行 */
+      gap: 16px;              /* 關鍵：設定區塊之間的平均間格（水平與垂直） */
+      justify-content: flex-start; /* 靠左對齊（或改用 space-between 平均分配剩餘空間） */
+      text-align: center;
     }
     .itemr {
       width: 33%;
@@ -474,234 +475,8 @@ nm:root {
       gap: 5%;
     }
 }
-@media (min-width:1001px) and (max-width: 1199px) {
-    .header-text h1{
-      font-size: clamp(32px, 7vw, 35px);
-    }
-    .header-text p {
-      font-size: 20px;
-    }
-    .itemr h5 {
-      font-size: 16px;
-    }
-    .itemr p {
-      font-size: 14px;
-    }
-    .third .trading {
-      padding: 0;
-    }  
-    .trading img {
-      width: 130px;
-    }
-    .trading h2 {
-      margin: 0 0 0 20px;
-      text-align: center;
-    }
-    .howstart .faq{
-      gap: 5%;
-    }
-}
 
-@media (min-width: 1000px) {
-    .header-text h1{
-      font-size: clamp(32px, 7vw, 50px);
-    }
-    .header-text p {
-      font-size: 25px;
-    }
-    .header-down{
-      display: block;
-      width: 100%;
-    }
-    .mobile-img{
-      width: 100%;
-      text-align: center;
-    }
-    .mobile-img img{
-      width: 60%;
-    }
-    .header-text{
-      width: 100%;
-    }
-    .itemr{
-      width: 33%;
-      padding: 20px 0 20px 0 ;
-    }
-    .itemr h5 {
-      font-size: 16px;
-    }
-    .itemr p {
-      font-size: 14px;
-    }
-    .third .trading {
-      padding: 0;
-    }  
-    .trading img {
-      width: 120px;
-    }
-    .trading h2 {
-      margin: 0 0 0 20px;
-      text-align: center;
-    }
-    .howstart .faq{
-      width: 100%;
-      gap: 3%;
-    }
-}
-@media (min-width:801px) and (max-width: 999px) {
-    .header-text h1{
-      font-size: clamp(32px, 7vw, 40px);
-    }
-    .header-text p {
-      font-size: 20px;
-    }
-    .header-down{
-      display: block;
-      width: 100%;
-    }
-    .mobile-img{
-      width: 100%;
-      text-align: center;
-    }
-    .mobile-img img{
-      width: 60%;
-    }
-    .header-text{
-      width: 100%;
-    }
-    .itemr{
-      width: 33%;
-      padding: 20px 0 20px 0 ;
-    }
-    .itemr h5 {
-      font-size: 16px;
-    }
-    .itemr p {
-      font-size: 14px;
-    }
-    .third .trading {
-      padding: 0;
-    }
-    .trading img {
-      width: 120px;
-    }
-    .trading h2 {
-      margin: 0 0 0 20px;
-      text-align: center;
-    }
-    .btn-download .android{
-      width: 30%;
-      padding: 15px;
-      margin: 1%;
-    }
-    .btn-download .ios{
-      width: 30%;
-      padding: 15px;
-      margin: 1%;
-    }
-    .howstart .faq{
-      width: 100%;
-      gap: 3%;
-    }
-    .slide{
-      width: 45%;
-    }
-    .platform .item{
-      padding: 0;
-    }
-}
-
-@media (min-width:800px){
-    .header-text h1{
-      font-size: clamp(32px, 7vw, 40px);
-    }
-    .header-text p {
-      font-size: 20px;
-    }
-    .header-down{
-      display: block;
-      width: 100%;
-    }
-    .mobile-img{
-      width: 100%;
-      text-align: center;
-    }
-    .mobile-img img{
-      width: 60%;
-    }
-    .header-text{
-      width: 100%;
-    }
-    .itemr{
-      width: 33%;
-      padding: 20px 0 20px 0 ;
-    }
-    .itemr h5 {
-      font-size: 16px;
-    }
-    .itemr p {
-      font-size: 14px;
-    }
-    .third .trading {
-      padding: 0;
-    }
-    .trading img {
-      width: 100px;
-    }
-    .trading h2 {
-      margin: 0;
-      text-align: center;
-    }
-    .asser h3{
-      margin: 0 auto;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      font-size: 16px;
-      padding-top: 10px;
-    }
-    .asser p{
-      font-size: 14px;
-    }
-    .btn-download .android{
-      width: 30%;
-      padding: 15px;
-      margin: 1%;
-    }
-    .btn-download .ios{
-      width: 30%;
-      padding: 15px;
-      margin: 1%;
-    }
-    .howstart .faq{
-      width: 100%;
-      gap: 3%;
-    }
-    .howstart .faq .question h3{
-      font-size: 16px;
-    }
-    .howstart .faq .question p{
-      font-size: 14px;
-    }
-    .swiper{
-      display: block;
-    }
-    .slide{
-      width: 100%;
-    }
-    .platform .item{
-      padding: 10px;
-      margin: 5px;
-    }
-    .platform .item h3{
-      font-size: 16px;
-    }
-    .platform .item p{
-      font-size: 13px;
-    }
-}
-
-@media (min-width:601px) and (max-width: 799px) {
+@media (min-width:601px) and (max-width: 800px) {
     .header-text h1{
       font-size: clamp(32px, 7vw, 40px);
     }
@@ -752,15 +527,16 @@ nm:root {
     .choose .asser{
       width: 100%;
       padding: 2%;
-      text-align: left;
+      text-align: center;
+      line-height: 1.5;
     }
     .asser h3{
-      width: 30%;
+      width: 100%;
       margin: 0 auto;
       float: left;
     }
     .asser p{
-      width: 70%;
+      width: 100%;
       margin: 0 auto;
     }
     .btn-download .android{
@@ -797,226 +573,8 @@ nm:root {
       font-size: 12px;
     }
 }
+
 @media (min-width:600px){
-    .header-text h1{
-      font-size: clamp(32px, 7vw, 40px);
-    }
-    .header-text p {
-      font-size: 20px;
-    }
-    .header-down{
-      display: block;
-      width: 100%;
-    }
-    .mobile-img{
-      width: 100%;
-      text-align: center;
-    }
-    .mobile-img img{
-      width: 60%;
-    }
-    .header-text{
-      width: 100%;
-    }
-    .second{
-      display: block;
-      width: 100%;
-      padding: 2%;
-    }
-    .itemr{
-      width: 100%;
-      padding: 2%;
-      text-align: left;
-    }
-    .itemr h5 {
-      width: 30%;
-      margin: 0 auto;
-      float: left;
-      font-size: 15px;
-    }
-    .itemr p {
-      margin: 0 auto;
-      font-size: 14px;
-    }
-    .third .trading {
-      padding: 0;
-    }
-    .trading img {
-      width: 80px;
-      border-radius: 0 20px;
-    }
-    .trading h2 {
-      margin: 0;
-      text-align: center;
-      font-size: 15px;
-    }
-    .choose .why{
-      display: block;
-      width: 100%;
-      padding: 2%;
-      
-    }
-    .choose .asser{
-      width: 100%;
-      padding: 2%;
-      text-align: left;
-    }
-    .asser h3{
-      width: 30%;
-      margin: 0 auto;
-      float: left;
-    }
-    .asser p{
-      width: 70%;
-      margin: 0 auto;
-    }
-    .btn-download .android{
-      width: 30%;
-      padding: 15px;
-      margin: 1%;
-    }
-    .btn-download .ios{
-      width: 30%;
-      padding: 15px;
-      margin: 1%;
-    }
-    .howstart .faq{
-      width: 100%;
-      display: block;
-    }
-    .swiper{
-      display: block;
-    }
-    .slide{
-      width: 100%;
-    }
-    .platform{
-      gap: 2%;
-    }
-    .platform .item{
-      padding: 5px;
-    }
-    .platform .item h3{
-      font-size: 14px;
-    }
-    .platform .item p{
-      font-size: 12px;
-    }
-}
-
-@media (min-width:511px) and (max-width: 599px){
-    .header-text h1{
-      font-size: clamp(32px, 7vw, 40px);
-    }
-    .header-text p {
-      font-size: 20px;
-    }
-    .header-down{
-      display: block;
-      width: 100%;
-    }
-    .mobile-img{
-      width: 100%;
-      text-align: center;
-    }
-    .mobile-img img{
-      width: 60%;
-    }
-    .header-text{
-      width: 100%;
-    }
-    .second{
-      display: block;
-      width: 100%;
-      padding: 2%;
-    }
-    .itemr{
-      width: 100%;
-      padding: 2%;
-      text-align: left;
-    }
-    .itemr h5 {
-      width: 40%;
-      margin: 0 auto;
-      float: left;
-      font-size: 15px;
-    }
-    .itemr p {
-      margin: 0 auto;
-      font-size: 14px;
-    }
-    .third-text p{
-      font-size: 15px;
-    }
-    .third .trading {
-      padding: 0;
-    }
-    .trading img {
-      width: 60px;
-      border-radius: 0 20px;
-    }
-    .trading h2 {
-      margin: 0;
-      text-align: center;
-      font-size: 15px;
-    }
-    .choose .why{
-      display: block;
-      width: 100%;
-      padding: 2%;      
-    }
-    .choose .asser{
-      width: 100%;
-      padding: 2%;
-      text-align: center;
-      line-height: 1.5;
-    }
-    .asser h3{
-      width: 100%;
-      margin: 0 auto;
-      float: left;
-      font-size: 16px;
-    }
-    .asser p{
-      width: 100%;
-      margin: 0 auto;
-      font-size: 15px;
-    }
-    .btn-download .android{
-      width: 30%;
-      padding: 15px;
-      margin: 1%;
-    }
-    .btn-download .ios{
-      width: 30%;
-      padding: 15px;
-      margin: 1%;
-    }
-    .howstart .faq{
-      width: 100%;
-      display: block;
-    }
-    .swiper{
-      display: block;
-    }
-    .slide{
-      width: 100%;
-    }
-    .platform{
-      gap: 2%;
-    }
-    .platform .item{
-      padding: 2px;
-    }
-    .platform .item h3{
-      font-size: 12px;
-    }
-    .platform .item p{
-      font-size: 10px;
-    }
-}
-
-@media (min-width:510px){
     .header-text h1{
       font-size: clamp(32px, 7vw, 30px);
     }
@@ -1125,7 +683,8 @@ nm:root {
       font-size: 11px;
     }
 }
-@media (min-width:401px) and (max-width: 509px){    
+
+@media (min-width:401px) and (max-width: 599px){    
     .header-down{
       display: block;
       width: 100%;
@@ -1467,20 +1026,25 @@ nm:root {
       font-size: 12px;
     }
     .third-invest {
-      width: 60%;     
-      text-align: center;
+      width: 100%;
       display: flex;
-      flex-wrap: wrap;
-      gap: 60px;
-      margin: 0 0 0 30px;
+      flex-wrap: wrap;        /* 關鍵：當空間不足時自動換行 */
+      gap: 10px;              /* 關鍵：設定區塊之間的平均間格（水平與垂直） */
+      justify-content: flex-start; /* 靠左對齊（或改用 space-between 平均分配剩餘空間） */
+      text-align: center;
     }
-    .third.trading{
-      width: 30%;
-      float: left;
-      flex: 0;/*5個區塊平均分配寬度*/
-      min-width: 0;/*確保最小寬度*/
-      padding: 0;      
+
+    .third .trading {
+       /* 根據需求設定區塊寬度，例如固定寬度，或使用百分比 */
+      flex: 0 1 calc(33.33% - 11px);  /*範例：扣除間格後，一行剛好排 3 個 */
+      /*width: 10%;*/
+      /*flex: 1;   5個區塊平均分配寬度*/
+      min-width: 0;   /*確保最小寬度*/
+      padding: 5px;
+      text-align: center;
       line-height: 1.5;
+      box-sizing: border-box;
+      border-radius: 8px;
     }
     .trading img {
       width: 60px;
@@ -1488,7 +1052,7 @@ nm:root {
     }
     .trading h2 {
       width: 60px;
-      margin: 0;
+      margin: 0 15px;
       text-align: center;
       font-size: 11px;
     }
@@ -1570,181 +1134,6 @@ nm:root {
     }
     .platform .item p{
       width: 70%;
-      font-size: 11px;
-    }
-}
-
-@media (min-width:300px){
-    .logo {
-      width: 100%;
-      height: auto;
-      padding: 0 20px;
-    }
-    .logo img {
-      width: 80px;
-    }
-    .header-down{
-      display: block;
-      width: 100%;
-    }
-    .mobile-img{
-      width: 100%;
-      text-align: center;
-    }
-    .mobile-img img{
-      width: 60%;
-    }
-    .header-text{
-      width: 100%;
-    }
-    .header-text h1{
-      font-size: clamp(25px, 7vw, 15px);
-    }
-    .header-text p {
-      display: block;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: 16px;
-    }
-    section{
-      padding: 0;
-    }
-    .second{
-      display: block;
-      width: 100%;
-      padding: 2%;
-    }
-    .itemr{
-      width: 100%;
-      padding: 3%;
-      text-align: left;
-      margin-bottom: 5px;
-    }
-    .itemr h5 {
-      width: 100%;
-      margin: 0 auto;
-      font-size: 14px;
-      line-height: 2.5;
-    }
-    .itemr p {
-      margin: 0 auto;
-      font-size: 14px;
-    }
-    .third-text p {
-      font-size: 12px;
-    }
-    .third-invest {
-      width: 60%;     
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 60px;
-      margin: 0 0 0 30px;
-    }
-    .third.trading{
-      width: 30%;
-      float: left;
-      flex: 0;/*5個區塊平均分配寬度*/
-      min-width: 0;/*確保最小寬度*/
-      padding: 0;      
-      line-height: 1.5;
-    }
-    .trading img {
-      width: 60px;
-      border-radius: 10px;
-    }
-    .trading h2 {
-      width: 60px;
-      margin: 0;
-      text-align: center;
-      font-size: 11px;
-    }
-    .choose .why{
-      display: block;
-      width: 100%;
-      padding: 2%;      
-    }
-    .choose .asser{
-      width: 100%;
-      padding: 2%;
-      text-align: center;
-      line-height: 1.5;
-    }
-    .asser h3{
-      width: 100%;
-      margin: 0 auto;
-      float: left;
-      font-size: 15px;
-      line-height: 1.5;
-    }
-    .asser p{      
-      margin: 0 auto;
-      font-size: 14px;
-    }
-    .btn-download{
-      width: 100%;
-      display: block;
-      justify-items: center;
-    }
-    .btn-download .android{
-      width: 50%;
-      padding: 10px;
-      margin: 1%;
-      text-align: center;
-    }
-    .btn-download .ios{
-      width: 50%;
-      padding: 10px;
-      margin: 1%;
-      text-align: center;
-    }
-    .howstart .faq{
-      width: 100%;
-      display: block;
-    }
-    .howstart .faq .question h3{
-      font-size: 15px;
-    }
-    .howstart .faq .question p{
-      font-size: 14px;
-    }
-    .swiper{
-      display: block;
-    }
-    .slide{
-      width: 100%;      
-    }
-    .slide-left img{
-      width: 60px;
-      height: 100px;
-      border-radius: 10px;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    .slide-right p{
-      font-size: 14px;
-    }
-    .platform{
-      gap: 2%;
-      display: block;
-    }
-    .platform .item{
-      width: 100%;
-      padding: 5px 0 5px 10px;
-      margin: 2px;
-      text-align: left;
-    }
-    .platform .item h3{
-      width: 40%;
-      font-size: 13px;
-      float: left;
-    }
-    .platform .item p{
-      width: 100%;
       font-size: 11px;
     }
 }
