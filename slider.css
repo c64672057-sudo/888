@@ -200,11 +200,11 @@ body {
   }
 
   .slick-prev {
-    left: 300px;
+    left: -30px;
   }
 
   .slick-next {
-    right: 300px;
+    right: -30px;
   }
 }
 
