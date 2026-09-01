@@ -208,6 +208,20 @@ body {
   }
 }
 
+@media (max-width: 700px) and (min-width: 991px) {
+  .slider-wrap {
+    width: 80%;
+  }
+
+  .slick-prev {
+    left: -30px;
+  }
+
+  .slick-next {
+    right: -30px;
+  }
+}
+
 @media (max-width: 600px) {
   .slider-section {
     padding: 70px 0;
