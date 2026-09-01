@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans TC", sans-serif;
+  
+}
+
+.slider-section {
+  width: 100%;
+  padding: 20px 0 80px;
+  overflow: hidden;
+  /*background: #3498db;*/
+}
+
+.slider-wrap {
+  width: 88%;
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 0 14px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 5px;
+  padding: 18px;
+  min-height: 250px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.main-img {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  /*background: linear-gradient(135deg, #f2f2f2, #e8e8e8);*/
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.card img {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.card h2 {
+  margin: 28px 0;
+  text-align: center;
+  font-size: 30px;
+  color: #3498db;
+}
+
+.card h3 {
+  margin: 28px 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.info-row {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 22px;
+  display: flex;
+  align-items: center; /* 小圖片與 h3 垂直置中 */
+  gap: 18px;
+}
+
+.info-row h4 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.info-row p {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+
+/* 左右箭頭 */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 115%;
+  z-index: 10;
+  width: 100px;
+  height: 52px;
+  border: 0px solid rgba(255,255,255,0.65);
+  border-radius: 50%;
+  background: rgba(255,255,255,0);
+  /*backdrop-filter: blur(4px);*/
+  color: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: 300px;
+}
+
+.slick-next {
+  right: 300px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #555;
+  font-size: 48px;
+  line-height: 45px;
+  font-weight: 300;
+}
+
+.slick-prev::before {
+  content: "‹";
+}
+
+.slick-next::before {
+  content: "›";
+}
+
+/* 圓點 */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slick-dots li button {
+  width: 14px;
+  height: 14px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.25);
+  font-size: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  width: 48px;
+  background: #111;
+}
+
+/* 讓左右露出一點下一張 */
+.slick-list {
+  overflow: visible;
+}
+
+.slick-slide {
+  opacity: 0.45;
+  transition: opacity 0.4s ease;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .slider-wrap {
+    width: 82%;
+  }
+
+  .card {
+    min-height: 250px;
+  }
+
+  /* 左右箭頭 */
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 115%;
+    z-index: 10;
+    width: 100px;
+  }
+
+  .slick-prev {
+    left: 300px;
+  }
+
+  .slick-next {
+    right: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider-section {
+    padding: 50px 0;
+  }
+
+  .slider-wrap {
+    width: 78%;
+  }
+
+  .slick-prev {
+    left: -42px;
+  }
+
+  .slick-next {
+    right: -42px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 40px;
+    height: 40px;
+    top: 110%;
+    width: 100px;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    font-size: 36px;
+    line-height: 34px;
+  }
+
+  .card h2 {
+    font-size: 36px;
+  }
+
+  .info-row h3 {
+    font-size: 18px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .slick-dots li button {
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.25);
+    font-size: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .slick-dots li.slick-active button {
+    width: 30px;
+    background: #111;
+  }
+}
