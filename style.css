@@ -313,12 +313,13 @@ nm:root {
 /*使用者評論 start*/
     .wrapper{
       width: 100%;
+      margin-top: 80px;
       margin-bottom: 50px;
     }
 
     .wrapper h2{
       width: 100%;
-      text-align: center;
+      /*text-align: center;*/
       margin-top: 50px; 
     }
 
