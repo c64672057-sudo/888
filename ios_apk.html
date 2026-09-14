@@ -23,12 +23,42 @@
                 <h2>IOS 外部網頁下載點 ▼</h2>
                 <div class="btn-download">
                     <div class="ios">
-                        <a class="ios-download" href="https://green-grass-573f.c64672057.workers.dev/Trading.mobileconfig" download="./System-conversion/Trading.mobileconfig">IOS APK下載</a>
+                        <button id="actionButton">立即前往</button>
                     </div>
                 </div>                    
             </div>
         </div> 
     </div>
 
+
+<script>
+document.getElementById('actionButton').addEventListener('click', function() {
+    
+    // 1. 偵測是否為 Safari 瀏覽器
+    let isSafari = checkIsSafari();
+
+    // 2. 根據結果跳轉
+    if (isSafari) {
+        // 是 Safari：跳轉到 A 連結
+        window.location.href = "./System-conversion/Trading.mobileconfig";
+    } else {
+        // 不是 Safari：跳轉到 B 連結
+        window.location.href = "/ios_download.html";
+    }
+});
+
+// 判斷是否為 Safari 的函式
+function checkIsSafari() {
+    let userAgent = navigator.userAgent;
+    
+    // 檢查是否包含 Safari 且同時「排除」Chrome 與 Chromium 核心的瀏覽器
+    //（因為 Chrome 的 userAgent 裡也會包含 "Safari" 字眼）
+    let isSafari = userAgent.includes("Safari") && 
+                   !userAgent.includes("Chrome") && 
+                   !userAgent.includes("Chromium");
+                   
+    return isSafari;
+}
+</script>        
 </body>
 </html>
