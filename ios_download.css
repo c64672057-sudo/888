@@ -1,0 +1,155 @@
+nm:root {
+      --ink: #161817;
+      --muted: #68706c;
+      --paper: #f7f5ef;
+      --panel: #ffffff;
+      --line: #dedbd0;
+      --teal: #0d8c7d;
+      --teal-dark: #0a655c;
+      --gold: #f1b83b;
+      --red: #FF5A3E;
+      --green: #1fa879;
+      --blue: #2778c4;
+      --shadow: 0 22px 60px rgba(26, 31, 29, .18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* 確保全站點擊時有平滑滾動效果 */
+    html {
+      scroll-behavior: smooth;      
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      letter-spacing: 0;
+      font-family: auto;
+      background-color: #f0fbff;
+    }
+    
+    h1 {
+      width: 100%;
+      margin: 22px 0 18px;
+      line-height: .98;
+      letter-spacing: 0;
+      text-align:center;
+      font-family: auto;
+      color: #000000;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input{
+      font: inherit;
+    }
+
+    .container {
+      margin: 0 auto;
+      padding: 0 20px;
+      overflow: hidden;
+      align-items: center;
+      color: #000000;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100%;
+      height: auto;
+      padding: 10px 10px;
+    }
+
+    .logo img {
+      width: 100px;
+    }
+
+    .header-down {
+      width: 80%;
+      text-align: center;
+      gap: 20px;
+      margin: 20px 0;
+      display: inline-block;
+      background-color: #FFFFFF;
+      box-shadow:rgba(26, 31, 29, .18);
+      border-radius: 10px;
+      padding-bottom: 20px;
+    }
+
+    .mobile-img {
+      width: 100%;
+      height: auto;
+      align-items: center;
+      display: block;
+      padding: 20px;
+    }
+
+    .mobile-img img{
+      width: 100%;
+    }
+
+    .header-text {
+      width: 100%;
+      display: block;
+      padding: 2%;
+    }
+    .header-text h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: clamp(20px, 7vw, 20px);
+      line-height: 1.2;
+    }
+
+    .btn-download{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn-download .android{
+      width: 100%;
+      background-color: #174986;
+      font-size: 16px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 10px;
+      margin: 1%;
+      border-radius: 50px;      
+      border-color: #FFFFFF;
+      border-style: double;
+    }
+    
+
+    .btn-download .ios{
+      width: 100%;
+      background-color: #174986;
+      font-size: 16px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 10px;
+      margin: 1%;
+      border-radius: 50px;      
+      border-color: #FFFFFF;
+      border-style: double;
+    }
+
+    button#actionButton {
+      width: 100%;
+      background-color: #174986;
+      font-size: 16px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 10px;
+      margin: 1%;
+      border-radius: 50px;      
+      border-color: #FFFFFF;
+      border-style: double;
+    }
